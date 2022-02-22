@@ -1,2 +1,2 @@
 # RobotFindsKitten
-Week7 team activity
+Week7
