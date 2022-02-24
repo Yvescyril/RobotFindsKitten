@@ -1,4 +1,4 @@
-# Description about Greed
+# Greed
 Have you imagined something cool falling from the sky and you wanna get it? at the same time, other objects are falling down and you need to take care of them. Greed is a game in which the player seeks to gather as many falling gems as possible. The game continues as long as the player wants more! If you touch a gem then earn a point but if touch a rock lose a point.
 
 ## Getting Started
@@ -17,16 +17,16 @@ project folder. Select the main module inside the hunter folder and click the "r
 ## Project Structure
 ---
 The project files and folders are organized as follows:
-   
+---
 root                    (project root folder)
-+-- rfk                 (source code for game)
++-- greed               (source code for game)
   +-- game              (specific game classes)
-  +-- __main__.py       (entry point for program)
+  +-- greed.py          (entry point for program)
 +-- README.md           (general info)
-   
+---
 
 ## Required Technologies
-   
+---
 * Python 3.8.0
 * Raylib Python CFFI 3.7
 ---
