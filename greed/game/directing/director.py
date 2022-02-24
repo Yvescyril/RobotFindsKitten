@@ -1,4 +1,6 @@
-import random
+                                                                # used by
+
+import random                                               
 
 from game.casting.actor import Actor
 from game.casting.artifact import Artifact
@@ -57,7 +59,7 @@ class Director:
             x = random.randint(1, 901)
             y = 0
             position = Point(x, y)
-            position = position.scale(15)
+            position = position.scale(25)  # Change understanding code
             r = random.randint(0, 255)
             g = random.randint(0, 255)
             b = random.randint(0, 255)
@@ -65,7 +67,7 @@ class Director:
             
             artifact = Artifact()
             artifact.set_text(text)
-            artifact.set_font_size(15)
+            artifact.set_font_size(25)      #   Change understanding code
             artifact.set_color(color)
             artifact.set_position(position)
             cast.add_actor("artifacts", artifact)

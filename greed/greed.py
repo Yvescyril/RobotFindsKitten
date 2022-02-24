@@ -1,16 +1,18 @@
+                                                                # used by
+
 import random
 
-from game.casting.actor import Actor
-from game.casting.artifact import Artifact
-from game.casting.cast import Cast
+from game.casting.actor import Actor                            # director.py
+from game.casting.artifact import Artifact                      # director.py
+from game.casting.cast import Cast                              # director.py                     
 
 from game.directing.director import Director
 
-from game.services.keyboard_service import KeyboardService
-from game.services.video_service import VideoService
+from game.services.keyboard_service import KeyboardService      # director.py
+from game.services.video_service import VideoService            # director.py
 
-from game.shared.color import Color
-from game.shared.point import Point
+from game.shared.color import Color                             # director.py
+from game.shared.point import Point                             # director.py
 
 FRAME_RATE = 12
 MAX_X = 900
