@@ -1,4 +1,4 @@
-                                                                # used by
+ # Seeking the inheritance application                                                               # used by
 
 import random
 
