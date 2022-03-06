@@ -1,4 +1,4 @@
- # Seeking the inheritance application                                                               # used by
+ # this file should be named __main__.py                                                          # used by
 
 import random
 
@@ -14,6 +14,7 @@ from game.services.video_service import VideoService            # director.py
 from game.shared.color import Color                             # director.py
 from game.shared.point import Point                             # director.py
 
+#parameters for creating the actors
 FRAME_RATE = 12
 MAX_X = 900
 MAX_Y = 600
@@ -21,7 +22,7 @@ CELL_SIZE = 15
 FONT_SIZE = 15
 CAPTION = "Greed"
 WHITE = Color(255, 255, 255)
-DEFAULT_ARTIFACTS = random.randint(1,10)
+DEFAULT_ARTIFACTS = random.randint(1,10) #like in the director.py, the number of the primitive artifacts created
 cast = Cast()
 
 
@@ -46,7 +47,7 @@ def main():
     robot.set_position(position)
     cast.add_actor("robots", robot)
 
-    # create the artifacts
+    # create the primitive artifacts, the following codes are the same as the function create artifacts, you can reorganize it if you will
     texts = ["O", "*"]
     for n in range(DEFAULT_ARTIFACTS):
         text = random.choice(texts)
