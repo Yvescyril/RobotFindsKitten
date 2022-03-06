@@ -19,20 +19,6 @@ class Point:
         self._x = x
         self._y = y
 
-#For what?
-    def add(self, other):
-        """Gets a new point that is the sum of this and the given one.
-
-        Args:
-            other (Point): The Point to add.
-
-        Returns:
-            Point: A new Point that is the sum.
-        """
-        x = self._x + other.get_x()
-        y = self._y + other.get_y()
-        return Point(x, y)
-
     def equals(self, other):
         """Whether or not this Point is equal to the given one.
 
@@ -60,7 +46,6 @@ class Point:
         """
         return self._y
 
-#Nisy grid namboarina dia iny grid iny no atao mifanaraka amin'ilay position pour que cette position mandeha be
     def scale(self, factor):
         """
         Scales the point by the provided factor.
