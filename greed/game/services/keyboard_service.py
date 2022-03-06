@@ -34,7 +34,7 @@ class KeyboardService:
         
         if pyray.is_key_down(pyray.KEY_RIGHT):
             dx = 1
-        
+        #dy equals to 0 because the player will move only Right and left
         if pyray.is_key_down(pyray.KEY_UP):
             dy = 0
         
