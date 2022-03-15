@@ -1,18 +1,16 @@
- # this file should be named __main__.py                                                          # used by
-
 import random
 
-from game.casting.actor import Actor                            # director.py
-from game.casting.artifact import Artifact                      # director.py
-from game.casting.cast import Cast                              # director.py                     
+from game.casting.actor import Actor                            
+from game.casting.artifact import Artifact             
+from game.casting.cast import Cast                                                
 
 from game.directing.director import Director
 
-from game.services.keyboard_service import KeyboardService      # director.py
-from game.services.video_service import VideoService            # director.py
+from game.services.keyboard_service import KeyboardService      
+from game.services.video_service import VideoService            
 
-from game.shared.color import Color                             # director.py
-from game.shared.point import Point                             # director.py
+from game.shared.color import Color                             
+from game.shared.point import Point                         
 
 #parameters for creating the actors
 FRAME_RATE = 12
@@ -22,7 +20,7 @@ CELL_SIZE = 15
 FONT_SIZE = 15
 CAPTION = "Greed"
 WHITE = Color(255, 255, 255)
-DEFAULT_ARTIFACTS = random.randint(1,10) #like in the director.py, the number of the primitive artifacts created
+DEFAULT_ARTIFACTS = random.randint(1,3) #like in the director.py, the number of the primitive artifacts created
 cast = Cast()
 
 
@@ -37,9 +35,8 @@ def main():
     
     # create the robot
     x = int(MAX_X/2)
-    y = int(MAX_Y-CELL_SIZE)
+    y = int(MAX_Y - CELL_SIZE)
     position = Point(x, y)
-
     robot = Actor()
     robot.set_text("#")
     robot.set_font_size(FONT_SIZE)
@@ -62,7 +59,7 @@ def main():
         
         artifact = Artifact()
         artifact.set_text(text)
-        artifact.set_font_size(FONT_SIZE)
+        artifact.set_font_size(25)
         artifact.set_color(color)
         artifact.set_position(position)
         cast.add_actor("artifacts", artifact)
