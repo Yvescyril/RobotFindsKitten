@@ -1,16 +1,41 @@
 import random
 
+<<<<<<< HEAD
 from game.casting.actor import Actor                          
 from game.casting.artifact import Artifact                      
 from game.casting.cast import Cast                                                 
+=======
+<<<<<<<< HEAD:greed/greed.py
+from game.casting.actor import Actor                          
+from game.casting.artifact import Artifact                      
+from game.casting.cast import Cast                                                 
+========
+from game.casting.actor import Actor                            
+from game.casting.artifact import Artifact             
+from game.casting.cast import Cast                                                
+>>>>>>>> c4963cffb1298560404a80832008020af5c46908:greed/__main__.py
+>>>>>>> c4963cffb1298560404a80832008020af5c46908
 
 from game.directing.director import Director
 
 from game.services.keyboard_service import KeyboardService      
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:greed/greed.py
+>>>>>>> c4963cffb1298560404a80832008020af5c46908
 from game.services.video_service import VideoService           
 
 from game.shared.color import Color                             
 from game.shared.point import Point                             
+<<<<<<< HEAD
+=======
+========
+from game.services.video_service import VideoService            
+
+from game.shared.color import Color                             
+from game.shared.point import Point                         
+>>>>>>>> c4963cffb1298560404a80832008020af5c46908:greed/__main__.py
+>>>>>>> c4963cffb1298560404a80832008020af5c46908
 
 #parameters for creating the actors
 FRAME_RATE = 22

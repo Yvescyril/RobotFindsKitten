@@ -128,7 +128,7 @@ class Director:
                 cast.remove_actor("artifacts", artifact) 
 
         #displaying the Actual score based on the circumstances above
-        banner.set_text(f"Actual score: {self._score}")
+        banner.set_text(f"Score: {self._score}")
 
     def _do_outputs(self, cast):
         """Draws the actors on the screen.
