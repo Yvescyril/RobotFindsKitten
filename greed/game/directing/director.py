@@ -1,5 +1,7 @@
                                                                 # used by
 
+import winsound
+
 import random                                               
 
 from game.casting.actor import Actor
@@ -54,7 +56,7 @@ class Director:
         self._video_service.close_window()
 
     def _create_artifacts(self, cast): #creating the falling gems and the rocks
-        texts = ["O", "*"]
+        texts = ["H", "*"]
         DEFAULT_ARTIFACTS = random.randint(0,3) #the number of the falling artifacts
         
         for n in range(DEFAULT_ARTIFACTS):
@@ -70,7 +72,7 @@ class Director:
             
             artifact = Artifact() #setting the artifacts with their descriptions, font_size and cell_size = 25 like the rfk game
             artifact.set_text(text)
-            artifact.set_font_size(25)      #   Change understanding code
+            artifact.set_font_size(15)      #   Change understanding code
             artifact.set_color(color)
             artifact.set_position(position)
             cast.add_actor("artifacts", artifact)
@@ -119,8 +121,10 @@ class Director:
             if robot.get_position().equals(artifact.get_position()):
                 if artifact.get_text() =="*":
                     self._score += 1 #win 1 point if the player touches the gem
+                    winsound.PlaySound("mixkit-winning-a-coin-video-game-2069.wav", winsound.SND_FILENAME)
                 else:
                     self._score -= 1 #lose 1 point if the player touches the rock
+                    winsound.PlaySound("mixkit-creature-cry-of-hurt-2208", winsound.SND_FILENAME)
                 cast.remove_actor("artifacts", artifact) 
 
         #displaying the Actual score based on the circumstances above

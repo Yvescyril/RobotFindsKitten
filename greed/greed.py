@@ -2,20 +2,20 @@
 
 import random
 
-from game.casting.actor import Actor                            # director.py
-from game.casting.artifact import Artifact                      # director.py
-from game.casting.cast import Cast                              # director.py                     
+from game.casting.actor import Actor                          
+from game.casting.artifact import Artifact                      
+from game.casting.cast import Cast                                                 
 
 from game.directing.director import Director
 
-from game.services.keyboard_service import KeyboardService      # director.py
-from game.services.video_service import VideoService            # director.py
+from game.services.keyboard_service import KeyboardService      
+from game.services.video_service import VideoService           
 
-from game.shared.color import Color                             # director.py
-from game.shared.point import Point                             # director.py
+from game.shared.color import Color                             
+from game.shared.point import Point                             
 
 #parameters for creating the actors
-FRAME_RATE = 12
+FRAME_RATE = 22
 MAX_X = 900
 MAX_Y = 600
 CELL_SIZE = 15
@@ -48,7 +48,7 @@ def main():
     cast.add_actor("robots", robot)
 
     # create the primitive artifacts, the following codes are the same as the function create artifacts, you can reorganize it if you will
-    texts = ["O", "*"]
+    texts = ["W", "*"]
     for n in range(DEFAULT_ARTIFACTS):
         text = random.choice(texts)
         x = random.randint(1, MAX_X)

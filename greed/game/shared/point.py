@@ -9,15 +9,15 @@ class Point:
         _y (integer): The vertical distance from the origin.
     """
     
-    def __init__(self, x, y):
+    def __init__(self, X, Y):
         """Constructs a new Point using the specified x and y values.
         
         Args:
             x (int): The specified x value.
             y (int): The specified y value.
         """
-        self._x = x
-        self._y = y
+        self._x = X
+        self._y = Y
 
     def equals(self, other):
         """Whether or not this Point is equal to the given one.
@@ -27,7 +27,7 @@ class Point:
 
         Returns: 
             boolean: True if both x and y are equal; false if otherwise.
-        """
+        """  
         return self._x == other.get_x() and self._y == other.get_y()
 
     def get_x(self):

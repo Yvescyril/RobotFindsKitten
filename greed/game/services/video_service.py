@@ -44,6 +44,7 @@ class VideoService:
         font_size = actor.get_font_size()
         color = actor.get_color().to_tuple()
         pyray.draw_text(text, x, y, font_size, color)
+        pyray.draw_circle_lines(x, y, font_size, color)
         
     def draw_actors(self, actors):
         """Draws the text for the given list of actors on the screen.

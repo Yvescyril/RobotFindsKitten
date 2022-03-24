@@ -36,10 +36,10 @@ class KeyboardService:
             dx = 1
         #dy equals to 0 because the player will move only Right and left
         if pyray.is_key_down(pyray.KEY_UP):
-            dy = 0
+            dy = -1
         
         if pyray.is_key_down(pyray.KEY_DOWN):
-            dy = 0
+            dy = 1
 
         direction = Point(dx, dy)
         direction = direction.scale(self._cell_size)
