@@ -1,6 +1,6 @@
                                                                 # used by
 
-import winsound
+from playsound import playsound
 
 import random                                               
 
@@ -121,10 +121,12 @@ class Director:
             if robot.get_position().equals(artifact.get_position()):
                 if artifact.get_text() =="*":
                     self._score += 1 #win 1 point if the player touches the gem
-                    winsound.PlaySound("mixkit-winning-a-coin-video-game-2069.wav", winsound.SND_FILENAME)
+                    # winsound.PlaySound("mixkit-winning-a-coin-video-game-2069.wav", winsound.SND_FILENAME)
+                    playsound('mixkit-winning-a-coin-video-game-2069.mp3')
                 else:
                     self._score -= 1 #lose 1 point if the player touches the rock
-                    winsound.PlaySound("mixkit-creature-cry-of-hurt-2208", winsound.SND_FILENAME)
+                    # winsound.PlaySound("mixkit-creature-cry-of-hurt-2208.wav", winsound.SND_FILENAME)
+                    playsound('mixkit-creature-cry-of-hurt-2208.mp3')
                 cast.remove_actor("artifacts", artifact) 
 
         #displaying the Actual score based on the circumstances above
